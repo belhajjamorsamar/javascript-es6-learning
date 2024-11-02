@@ -32,7 +32,8 @@ console.log(example); // Affiche "Hello" suivi de "world" sur la ligne suivante
 // Affichage du contenu de la variable 'example' dans l'élément avec l'ID 'example'
 document.getElementById('example').innerText = example; // Affecte le texte à un élément HTML
 
-// Déstructuration avec renommage
+{/* Déstructuration des objet */}
+// Déstructuration  avec renommage
 const mypersonalInformation={
     name: "dooudi",
     city: "Tunisia",
@@ -62,3 +63,43 @@ const {namee, agee, adresse:{capital,ville}}=object2;
 
 console.log(capital);
 console.log(ville);
+
+{/* Déstructuration des arrays */}
+let [firstname,midlename, latsname]=['Samar','coding love'  ,'love'];
+console.log(firstname , midlename , latsname)
+
+const tab1 =[2,3,4,6,];
+const [deuxieme,troisième,quatrième] =tab1;
+console.log(deuxieme);
+console.log(troisième);
+
+//valeur par defaut 
+ const nombres =[9];
+ const [neufieme,dixieme=10]=nombres;
+ console.log(neufieme,dixieme);
+
+ const tab2 =[1,2,3,4,6,7,8,9];
+//utilisation de la paramettres "rest "" 
+ const [premier ,...reste]=tab2;
+ console.log(premier);
+ console.log(reste);
+
+ //echanger des variables 
+ let c=5;
+ let d=6;
+ [c,d]=[d,c];
+
+ console.log(`le valeur de c est ${c}`);
+ console.log(`le valeur de d est ${d}`);
+
+ //utilisation dans des fonctions 
+
+ function affiercordonnes ([x,y]){
+    console.log(`coordonnées : (${x}, ${y})  `);
+ }
+const point =[5,10];
+affiercordonnes(point);
+ 
+
+
+
