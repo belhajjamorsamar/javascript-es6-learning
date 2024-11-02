@@ -31,3 +31,34 @@ console.log(example); // Affiche "Hello" suivi de "world" sur la ligne suivante
 
 // Affichage du contenu de la variable 'example' dans l'élément avec l'ID 'example'
 document.getElementById('example').innerText = example; // Affecte le texte à un élément HTML
+
+// Déstructuration avec renommage
+const mypersonalInformation={
+    name: "dooudi",
+    city: "Tunisia",
+}
+const{name:nom, city:madina} =mypersonalInformation ;
+console.log(nom);
+console.log(madina);
+
+
+//Déstructuration avec valeur par défaut
+const object ={
+    name:"khouloud",
+}
+const {name ,age=30} =object;
+console.log (name, age);
+
+//Déstructuration imbriqué 
+const object2 ={
+    namee :"moez",
+    agee:22,
+    adresse :{
+        capital:"tunis",
+        ville:"sfax"
+    },
+}
+const {namee, agee, adresse:{capital,ville}}=object2;
+
+console.log(capital);
+console.log(ville);
