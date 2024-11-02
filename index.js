@@ -123,6 +123,23 @@ function addressMaker(adress){
 
 addressMaker({city:'austin' , state:"texas"});
 
+{/* for..of loop */}
+//parcour tablaux
+let incomes =[62000,67000,75000];
+let total = 0;
+for (const income of incomes){
+    total +=income ;
+}
+console.log(total);
+
+//parcours chaine
+ const chaine="hello ly name is samar"
+  for (const ch of chaine){
+    console.log(ch);
+  }
+
+  
+
 
  
 
