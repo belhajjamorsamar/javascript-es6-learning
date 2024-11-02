@@ -99,6 +99,31 @@ console.log(troisième);
  }
 const point =[5,10];
 affiercordonnes(point);
+
+{/* object leterals */}
+
+const personee ={
+    nom:"samar",
+    prenom:"belhajjamor",
+    ville: "Tunis"
+}
+console.log(personee.nom);
+console.log(personee.ville);
+
+
+function addressMaker(adress){
+    const {city, state}=adress;
+    const newadress={
+        city,
+        state,
+        counrty:"united states"
+    }
+    console.log(newadress);
+}
+
+addressMaker({city:'austin' , state:"texas"});
+
+
  
 
 
